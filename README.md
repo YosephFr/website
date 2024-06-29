@@ -404,6 +404,7 @@ El archivo `login.php` gestiona el proceso de inicio de sesión de los usuarios,
 
 ### Código y Explicación
 
+```html
 <?php
 // login.php
 require_once 'configuracion.php';
@@ -470,6 +471,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+```
 
 - **Error de ejecución**: Muestra un mensaje de error si la consulta no se ejecuta correctamente.
 - **$stmt->close()**: Cierra la declaración preparada.
@@ -491,6 +493,7 @@ El archivo `register.php` maneja el registro de nuevos usuarios, almacenando sus
 
 ### Código y Explicación
 
+```html
 <?php
 // register.php
 require_once 'configuracion.php';
@@ -534,6 +537,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+```
 
 - **$stmt->close()**: Cierra la declaración preparada.
 - **$conn->close()**: Cierra la conexión a la base de datos.
@@ -552,6 +556,7 @@ El archivo `logout.php` finaliza la sesión del usuario actual y redirige a la p
 
 ### Código y Explicación
 
+```html
 <?php
 // logout.php
 session_start();
@@ -559,6 +564,7 @@ session_unset();
 session_destroy();
 echo "Sesión cerrada correctamente.";
 ?>
+```
 
 - **session_start()**: Inicia una nueva sesión o reanuda la sesión existente.
 - **session_unset()**: Limpia todas las variables de sesión.
@@ -582,6 +588,7 @@ El archivo `configuracion.php` contiene la configuración de la base de datos y 
 
 ### Código y Explicación
 
+```html
 <?php
 // configuracion.php
 
@@ -604,6 +611,7 @@ function getDBConnection() {
     }
     return $mysqli;
 }
+```
 
 - **getDBConnection()**: Función que establece una conexión a la base de datos usando los parámetros definidos anteriormente.
 - **$mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT)**: Crea una nueva instancia de la clase `mysqli` para conectarse a la base de datos.
