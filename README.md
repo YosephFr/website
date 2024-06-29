@@ -404,7 +404,7 @@ El archivo `login.php` gestiona el proceso de inicio de sesión de los usuarios,
 
 ### Código y Explicación
 
-```html
+```php
 <?php
 // login.php
 require_once 'configuracion.php';
@@ -493,7 +493,7 @@ El archivo `register.php` maneja el registro de nuevos usuarios, almacenando sus
 
 ### Código y Explicación
 
-```html
+```php
 <?php
 // register.php
 require_once 'configuracion.php';
@@ -556,7 +556,7 @@ El archivo `logout.php` finaliza la sesión del usuario actual y redirige a la p
 
 ### Código y Explicación
 
-```html
+```php
 <?php
 // logout.php
 session_start();
@@ -588,7 +588,7 @@ El archivo `configuracion.php` contiene la configuración de la base de datos y 
 
 ### Código y Explicación
 
-```html
+```php
 <?php
 // configuracion.php
 
