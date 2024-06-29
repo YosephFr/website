@@ -31,6 +31,7 @@ Este proyecto es un sitio web de currículum vitae desarrollado con HTML, CSS, P
 
 ## Estructura del Proyecto
 
+```
 website/
 │
 ├── css/
@@ -55,6 +56,7 @@ website/
 ├── register.php
 ├── logout.php
 └── README.md
+```
 
 ## Instalación
 
